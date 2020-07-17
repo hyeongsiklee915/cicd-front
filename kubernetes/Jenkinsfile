@@ -20,7 +20,7 @@ containerTemplate(name: 'kubectl', image: 'roffe/kubectl', command: 'cat', ttyEn
 
 		// #1 Github 소스 가져오기
 		stage('Get Source') {
-		 git credentialsId: 'dd9661709f16e6e075fd84f88dc01647ff97b149', url: 'https://github.com/hyeongsiklee915', branch: 'master'
+		 git credentialsId: 'github-lab08', url: 'https://github.com/hyeongsiklee915', branch: 'master'
 		}
 
 		// #2 Properties 파일 읽기	
